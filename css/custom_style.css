@@ -1,0 +1,15 @@
+/*header Menu*/
+
+.navbar-default .navbar-nav>li>a {
+	font-size: 1.4rem;
+    line-height: 2rem;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ff7675;
+    text-decoration: none;
+    background-color: inherit;
+}
+.inner-drop-nav li>a .icon-arrow-down {margin-top:5px;}
