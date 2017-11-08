@@ -1457,7 +1457,7 @@ fieldset[disabled] .qa-vote-down-disabled {
 .qa-vote-first-button {
   position: absolute;
   left: 2px;
-  top: 6px;
+  top: 0px;
   color: #B0DFB1;
 }
 .qa-vote-second-button {
@@ -1525,7 +1525,7 @@ fieldset[disabled] .qa-voted-down-button {
 }
 .qa-netvote-count {
   position: absolute;
-  top:20px;
+  top:16px;
   text-align: center;
   display: block;
 }
@@ -1585,11 +1585,11 @@ fieldset[disabled] .qa-voted-down-button {
   border: 1px solid #ebccd1;
   color: #a94442;*/
 }
-.qa-a-count-selected {
+/*.qa-a-count-selected {
   background: #c1e2b3;
   border: 1px solid #bbdba1;
   color: #2b542c;
-}
+}*/
 .qa-a-count-data {
   font-size: 20px;
   line-height: 24px;
@@ -3883,13 +3883,7 @@ a.qa-browse-cat-link:visited {
   border-color: #dddddd;
   border-color: #bce8f1;
 }
-.qa-part-q-view-solved {
-  border: 1px solid transparent;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #dddddd;
-  border-color: #d6e9c6;
-}
+
 .qa-q-view-main {
   float: left;
   width: 95%;
