@@ -2776,105 +2776,7 @@ fieldset[disabled] .qa-form-basic-button {
   background-color: #ffbaba;
   background-image: none;
 }
-.qa-form-tall-button-cancel {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #ffffff;
-  background-color: #f0ad4e;
-  border-color: #eea236;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
-  background-image: -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
-  background-image: linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #e38d13;
-}
-.qa-form-tall-button-cancel:hover,
-.qa-form-tall-button-cancel:focus,
-.qa-form-tall-button-cancel.focus {
-  color: #333333;
-  text-decoration: none;
-}
-.qa-form-tall-button-cancel:active,
-.qa-form-tall-button-cancel.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.qa-form-tall-button-cancel.disabled,
-.qa-form-tall-button-cancel[disabled],
-fieldset[disabled] .qa-form-tall-button-cancel {
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.qa-form-tall-button-cancel:active,
-.qa-form-tall-button-cancel.active {
-  background-image: none;
-}
-.qa-form-tall-button-cancel:hover,
-.qa-form-tall-button-cancel:focus,
-.qa-form-tall-button-cancel.focus,
-.qa-form-tall-button-cancel:active,
-.qa-form-tall-button-cancel.active,
-.open > .dropdown-toggle.qa-form-tall-button-cancel {
-  color: #ffffff;
-  background-color: #ec971f;
-  border-color: #d58512;
-}
-.qa-form-tall-button-cancel:active,
-.qa-form-tall-button-cancel.active,
-.open > .dropdown-toggle.qa-form-tall-button-cancel {
-  background-image: none;
-}
-.qa-form-tall-button-cancel .badge {
-  color: #f0ad4e;
-  background-color: #ffffff;
-}
-.qa-form-tall-button-cancel:active,
-.qa-form-tall-button-cancel.active {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.qa-form-tall-button-cancel:hover,
-.qa-form-tall-button-cancel:focus {
-  background-color: #eb9316;
-  background-position: 0 -15px;
-}
-.qa-form-tall-button-cancel:active,
-.qa-form-tall-button-cancel.active {
-  background-color: #eb9316;
-  border-color: #e38d13;
-}
-.qa-form-tall-button-cancel:disabled,
-.qa-form-tall-button-cancel[disabled] {
-  background-color: #eb9316;
-  background-image: none;
-}
+
 .qa-form-wide-button-save:disabled,
 .qa-form-wide-button-saverecalc:disabled,
 .qa-form-tall-button-save:disabled,
@@ -3088,7 +2990,7 @@ fieldset[disabled] .qa-form-light-button {
 .qa-form-light-button:before {
   content: "\e912";
   display: inline-block;
-  font: normal normal normal 14px/1 'icomoon';
+  font-family: 'icomoon' !important;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -3108,12 +3010,10 @@ fieldset[disabled] .qa-form-light-button {
   
 }
 
-.qa-form-light-button-flag,
-.qa-form-light-button-flag:hover {
-  color: #a94442;
-}
+
 .qa-form-light-button-flag:before {
-  content: "\f024";
+
+  content: "\e915";
 }
 .qa-form-light-button-unflag,
 .qa-form-light-button-clearflags,
@@ -3773,6 +3673,7 @@ fieldset[disabled] .qa-form-basic-button {
 .qa-q-item-meta>span:last-child, .qa-q-view-meta>span:last-child, .qa-a-item-meta>span:last-child {border-right: 0px;}
 a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #151315; padding-right:10px; padding-left:10px;}
 .qa-q-item-count {color: #F9585F;}
+.qa-q-item-count-data:before {    font-family: 'icomoon' !important; line-height:17px; content: '\e920'; }
 .qa-q-item-tags {
   margin: 10px 0;
   overflow: hidden;
@@ -3954,11 +3855,8 @@ a.qa-browse-cat-link:visited {
 }
 /* Question view */
 .qa-part-q-view {
-  border: 1px solid transparent;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #dddddd;
-  border-radius: 5px ;
+  
+  border-radius: 0px ;
   padding: 5px;
 }
 .qa-q-view {

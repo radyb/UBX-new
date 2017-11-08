@@ -393,27 +393,28 @@ class qa_html_theme extends qa_html_theme_base {
 				$this->vote_buttons($post);				
 				$this->vote_clear();
 			}
-
+		
 		function vote_buttons($post)
 			{
+
 				$this->output('<div class="qa-vote-buttons '.(($post['vote_view'] == 'updown') ? 'qa-vote-buttons-updown' : 'qa-vote-buttons-net').'">');
 
 				switch (@$post['vote_state'])
 				{
 					case 'voted_up':
-						$this->post_hover_button($post, 'vote_up_tags', 'qa-vote-one-button qa-voted-up');
+						$this->post_hover_button($post, 'vote_up_tags', '', 'qa-vote-one-button qa-voted-up');
 						break;
 
 					case 'voted_up_disabled':
-						$this->post_disabled_button($post, 'vote_up_tags', 'qa-vote-one-button qa-vote-up');
+						$this->post_disabled_button($post, 'vote_up_tags', '', 'qa-vote-one-button qa-vote-up');
 						break;
 
 					case 'voted_down':
-						$this->post_hover_button($post, 'vote_down_tags',  'qa-vote-one-button qa-voted-down');
+						$this->post_hover_button($post, 'vote_down_tags', '', 'qa-vote-one-button qa-voted-down');
 						break;
 
 					case 'voted_down_disabled':
-						$this->post_disabled_button($post, 'vote_down_tags', 'qa-vote-one-button qa-vote-down');
+						$this->post_disabled_button($post, 'vote_down_tags', '', 'qa-vote-one-button qa-vote-down');
 						break;
 
 					case 'up_only':
@@ -422,8 +423,8 @@ class qa_html_theme extends qa_html_theme_base {
 						break;
 
 					case 'enabled':
-						$this->post_hover_button($post, 'vote_up_tags',  'qa-vote-first-button qa-vote-up');
-						$this->post_hover_button($post, 'vote_down_tags',  'qa-vote-second-button qa-vote-down');
+						$this->post_hover_button($post, 'vote_up_tags', '', 'qa-vote-first-button qa-vote-up');
+						$this->post_hover_button($post, 'vote_down_tags', '',  'qa-vote-second-button qa-vote-down');
 						break;
 
 					default:
@@ -451,7 +452,7 @@ class qa_html_theme extends qa_html_theme_base {
 		function q_item_stats($q_item)
 		{
 			$this->output('<div class="qa-q-item-stats">');
-
+			//Radu
 			$this->voting($q_item);
 			// $this->a_count($q_item);
 			// qa_html_theme_base::view_count($q_item);
