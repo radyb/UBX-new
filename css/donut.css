@@ -586,8 +586,18 @@ header .search-bar {
   background: #ffffff;
 }
 
-.dropdown-menu a {
+.dropdown-menu a,
+.dropdown-menu>li>a {
   padding: 7px 10px;
+}
+#user-dropdown-menu li a, 
+#user-dropdown-menu li a:active,
+#user-dropdown-menu li a:visited,
+#user-dropdown-menu li a:focus{
+  color: #ff7675
+}
+#user-dropdown-menu li a:hover {
+  color: #ffbaba;
 }
 .dropdown-menu li {
   border-bottom: 1px solid #eee;
@@ -2477,6 +2487,7 @@ a.list-group-item.active:hover {
 .qa-form-wide-table > tbody > tr > td.qa-form-wide-ok .alert-link {
   color: #2b542c;
 }
+.qa-error,
 .qa-form-tall-error,
 .qa-form-wide-error,
 .qa-form-tall-table > tbody > tr > td.qa-form-tall-error,
@@ -5338,7 +5349,8 @@ fieldset[disabled] .qa-template-user .qa-part-form-profile #level .qa-form-wide-
   color: #428bca;
   font-weight: 700;
 }
-#login-dropdown-menu {
+
+#login-dropdown-menu, .navbar-nav.navbar-right li .dropdown-menu {
   width: 250px;
   padding: 10px;
   border-radius: 0px;
