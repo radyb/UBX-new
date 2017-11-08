@@ -3673,7 +3673,7 @@ fieldset[disabled] .qa-form-basic-button {
 .qa-q-item-meta>span:last-child, .qa-q-view-meta>span:last-child, .qa-a-item-meta>span:last-child {border-right: 0px;}
 a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #151315; padding-right:10px; padding-left:10px;}
 .qa-q-item-count {color: #F9585F;}
-.qa-q-item-count-data:before {    font-family: 'icomoon' !important; line-height:17px; content: '\e920'; }
+.qa-q-item-count-data:before {    font-family: 'icomoon' !important; line-height:17px; content: '\e920'; margin-right:7px;vertical-align:middle;}
 .qa-q-item-tags {
   margin: 10px 0;
   overflow: hidden;
