@@ -1,11 +1,19 @@
+@font-face {
+    font-family: 'ublox';
+    src: url(font/u-blox_Rg.ttf);
+    font-weight: normal;
+}
+
 html {
-    font-family: 'ublox', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'ublox' !important; 
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
     color: #2a2a2a;
     background: #fff;
 }
-
+*, html {
+  font-family: 'ublox';
+}
 a, a:hover, a:active, a:focus, a.visited {
     color: #ff7675;
     text-decoration: none;
@@ -599,6 +607,7 @@ header .search-bar {
 #user-dropdown-menu li a:hover {
   color: #ffbaba;
 }
+#user-dropdown-menu li a span {margin-right: 10px;}
 .dropdown-menu li {
   border-bottom: 1px solid #eee;
 }
@@ -2599,7 +2608,9 @@ a.list-group-item.active:hover {
 .btn-primary,
 .btn-primary:focus,
  .btn-primary:active,
- .btn-success {
+ .btn-success,
+ .btn-success:focus,
+ .btn-success:active {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3723,16 +3734,10 @@ a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #1
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  background: #f4f4f4;
-  border: 1px solid #c7dce6;
-  color: #444;
-  font-size: 14px;
-  text-align: center;
-  clear: both;
-  padding: 8px;
+  font-size: 16px;
+ 
   margin-top: 22px;
-  border-radius: 3px;
-  box-shadow: 0 10px 15px 0 #ffffff inset, 0 0 5px 0 rgba(0, 0, 0, 0.05);
+ 
 }
 .qa-suggest-next a {
   font-weight: bold;
