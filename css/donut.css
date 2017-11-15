@@ -733,7 +733,7 @@ header .search-bar {
 /* top portion of the body */
 .donut-masthead {
   position: relative;  
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: #428bca;
 }
 .donut-masthead .container {
@@ -1012,7 +1012,7 @@ div .header-banner {
   border-color: #ff7675;
     outline: 1px solid #ff7675;
     margin-left: -1px;
-    margin-top: -1px;
+   
         color: #ff7675;
     font-weight: bold;
 }
@@ -1665,7 +1665,7 @@ a.qa-template-question .qa-view-count:focus {
   display: inline;
 }
 .qa-template-question .qa-view-count-pad {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   letter-spacing: 1px;
 }
@@ -3770,7 +3770,7 @@ a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #1
 }
 /* users page */
 .user-box {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -3928,7 +3928,7 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-content .entry-content a:active,
 .qa-q-view-content .entry-content a:visited {color: #F9585F; text-decoration: none;}
 .qa-q-view-avatar {
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -4029,9 +4029,7 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-extra-content {
   font-weight: 700;
 }
-.qa-q-view-when-data {
-  font-weight: 700;
-}
+
 .qa-q-view-who-title {
   font-size: 14px;
   font-weight: 700;
@@ -4242,7 +4240,7 @@ a.qa-browse-cat-link:visited {
   }
 }
 .qa-a-item-avatar {
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -4251,9 +4249,7 @@ a.qa-browse-cat-link:visited {
   vertical-align: middle;
   font-size: 16px;
 }
-.qa-a-item-when-data {
-  font-weight: 700;
-}
+
 .qa-a-item-who-title {
   font-size: 12px;
   font-weight: 700;
@@ -5254,8 +5250,8 @@ fieldset[disabled] .qa-template-user .qa-part-form-profile #level .qa-form-wide-
 .qa-template-user .qa-part-form-activity td .qa-uf-user-downvotes,
 .qa-template-user .qa-part-form-activity td .qa-uf-user-upvoteds,
 .qa-template-user .qa-part-form-activity td .qa-uf-user-downvoteds {
-  font-size: 18px;
-  color: #428bca;
+  font-size: 16px;
+  color: #ff7675;
   font-weight: 700;
 }
 
