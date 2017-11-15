@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ublox';
-    src: url(font/u-blox_Rg.ttf);
+    src: url(../fonts/u-blox_Rg.ttf);
     font-weight: normal;
 }
 
@@ -732,10 +732,16 @@ header .search-bar {
 }
 /* top portion of the body */
 .donut-masthead {
-  position: relative;
-  border-bottom: 1px solid #e2e2e2;
-  margin-bottom: 20px;
+  position: relative;  
+  margin-bottom: 0px;
   color: #428bca;
+}
+.donut-masthead .container {
+  border-bottom: 1px solid #e2e2e2;
+}
+.donut-masthead h1 {
+  font-size: 24px !important;
+  font-weight: bold;
 }
 /* page title */
 .page-title {
@@ -1115,6 +1121,7 @@ div .header-banner {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 15px;
   min-height: 80px;
 }
 @media (min-width: 992px) {
@@ -1133,7 +1140,7 @@ div .header-banner {
   border: 1px solid;
   border-color: #87827C;
   color: #2a2a2a;
-  
+  font-size: 16px;
 }
 .qa-sidebar a {color: #ff7675;}
 .qa-sidebar h4 {
@@ -1216,7 +1223,7 @@ div .header-banner {
 }
 .entry-title {
   color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
+  
   font-weight: 700;
 }
 .qa-rss-feed {
@@ -2067,6 +2074,7 @@ fieldset[disabled] .qa-unfavorite-button {
 .qa-widget-side h2 {
   margin: 10px 0 10px !important;
   font-size: 16px;
+  font-weight: bold;
 }
 .qa-widget-side > div.qa-related-qs {
   padding: 0;
@@ -3495,7 +3503,7 @@ fieldset[disabled] .qa-form-basic-button {
 .qa-q-list-item {
   margin-left: -15px;
   margin-right: -15px;
-  padding: 35px 0px;
+  padding: 30px 0px;
   border-top: 1px solid;
   /*-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);*/
@@ -3579,12 +3587,12 @@ fieldset[disabled] .qa-form-basic-button {
 }
 .qa-q-item-title {
   color: #000000;
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: bold ;
 }
 .qa-q-item-title a {
-  font-size: 3rem;
-  line-height: 3.8rem;
-  font-weight: bold ;
+  
+  
   /*line-height: 1.42857143;*/
   color: #151315;
 }
@@ -3927,7 +3935,7 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-meta {
   display: inline-block;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 16px;
 }
 .qa-q-view-follows {
   padding: 15px;
@@ -4241,7 +4249,7 @@ a.qa-browse-cat-link:visited {
 .qa-a-item-meta {
   display: inline-block;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 16px;
 }
 .qa-a-item-when-data {
   font-weight: 700;
@@ -4741,7 +4749,6 @@ fieldset[disabled] .qa-a-selected {
 .qa-category-link {
   font-size: 16px;
   color: #F9585F;
-  font-weight: 700;
 }
 .qa-user-link:hover, .qa-category-link:hover {
   color: #F9585F;
@@ -4858,6 +4865,11 @@ fieldset[disabled] .qa-a-selected {
 .qa-avatar-image {
   border: 0;
   vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 .qa-avatar-link,
 .qa-avatar-link:hover {
