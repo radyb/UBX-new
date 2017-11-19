@@ -284,6 +284,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:after {
   content: ' ';
   margin-right: 10px;
+  margin-top: -2px;
   display: inline-block;
   vertical-align: text-top;
   width: 18px;
@@ -373,10 +374,9 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus,
 radio:focus {
-  border-color: #66afe9;
+  border-color: #1a1a1a;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  
 }
 input[type="text"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder,
@@ -445,18 +445,7 @@ textarea {
 textarea.qa-form-tall-text {
   height: 100px;
 }
-/* reducing the default shadow of BS */
-input[type="text"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus,
-checkbox:focus,
-radio:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: none ;
-  box-shadow: none ;
-}
+
 input[name="file"] {
   display: inline;
   margin-left: 10px;
@@ -1240,12 +1229,11 @@ div .header-banner {
 }
 /*-- content and widgets --*/
 .qa-ask-box {
-  background: #428bca;
-  border-radius: 3px;
+ 
 }
 .qa-ask-box .qa-form-tall-label {
   font-weight: bold;
-  color: #ffffff;
+
   padding: 15px !important;
 }
 .qa-ask-box tr:hover {
@@ -1257,7 +1245,7 @@ div .header-banner {
 }
 .entry-title {
   color: #000000;
-  
+  font-size: 24px;
   font-weight: 700;
 }
 .qa-rss-feed {
