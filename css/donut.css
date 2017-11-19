@@ -314,6 +314,40 @@ input[type="checkbox"]:checked:after {
    
   }
 
+input[type="radio"]:before {
+  content: ' ';
+
+  display: inline-block;
+/*  vertical-align: text-top;*/
+  width: 14px;
+  height: 14px;
+  color: #ffffff;
+  background-color: #ffffff;
+  border: solid 2px #ff7675;
+  border-radius:7px;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+}
+input[type="radio"]:hover:before {
+  background: #ff7675;
+}
+input[type="radio"]:checked:after {
+    content: ' ';
+    margin-top: -15.5px;
+    margin-left: 5px;
+    position: absolute;
+    
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius:2px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;   
+   background: #ff7675; 
+   margin-right:-10px;
+   
+  }
+
 input[type="text"],
 input[type="password"],
 textarea,
