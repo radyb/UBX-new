@@ -2092,9 +2092,9 @@ a.list-group-item.active > .qa-nav-cat-item .qa-nav-cat-note,
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #428bca;
+  color: #ff7675;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #ff7675;
   margin-left: -1px;
 }
 .qa-page-links-list > li:first-child > a,
@@ -2108,35 +2108,30 @@ a.list-group-item.active > .qa-nav-cat-item .qa-nav-cat-note,
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-.qa-page-links-list > li > a:hover,
-.qa-page-links-list > li > span:hover,
-.qa-page-links-list > li > a:focus,
-.qa-page-links-list > li > span:focus {
-  color: #2a6496;
-  background-color: #eeeeee;
-  border-color: #dddddd;
-}
 .qa-page-links-list > .active > a,
 .qa-page-links-list > .active > span,
 .qa-page-links-list > .active > a:hover,
 .qa-page-links-list > .active > span:hover,
 .qa-page-links-list > .active > a:focus,
-.qa-page-links-list > .active > span:focus {
-  z-index: 2;
+.qa-page-links-list > .active > span:focus,
+.qa-page-links-list > li > a:hover,
+.qa-page-links-list > li > span:hover,
+.qa-page-links-list > li > a:focus,
+.qa-page-links-list > li > span:focus {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
-  cursor: default;
+  background-color: #ff7675;
+  border-color: #ff7675;
 }
+
 .qa-page-links-list > .disabled > span,
 .qa-page-links-list > .disabled > span:hover,
 .qa-page-links-list > .disabled > span:focus,
 .qa-page-links-list > .disabled > a,
 .qa-page-links-list > .disabled > a:hover,
 .qa-page-links-list > .disabled > a:focus {
-  color: #777777;
-  background-color: #ffffff;
-  border-color: #dddddd;
+  color: #bebebe;
+  background-color: #ffbaba;
+  border-color: #ffbaba;
   cursor: not-allowed;
 }
 .list-group-item {
@@ -5001,6 +4996,22 @@ fieldset[disabled] .qa-template-user .qa-part-form-profile #level .qa-form-wide-
   font-size: 16px;
   color: #ff7675;
   font-weight: 700;
+}
+.navbar-nav:not(.navbar-right) li .dropdown-menu {
+  padding: 10px;
+  border-radius: 0px;
+  box-shadow: 0 0 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
+  border:solid 1px #BEBEBE;
+}
+.dropdown-split-right {border-bottom: 0px !important;}
+.navbar-nav:not(.navbar-right) li {
+  border-bottom: 1px solid #eee;
+}
+.navbar-nav:not(.navbar-right) li a {
+  color: #ff7675;
+      
 }
 
 #login-dropdown-menu, .navbar-nav.navbar-right li .dropdown-menu {
