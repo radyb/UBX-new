@@ -4289,9 +4289,7 @@ fieldset[disabled] .qa-a-selected {
   margin-bottom: 6px;
   font-size: 12px;
 }
-.qa-c-item-footer {
-  position: relative;
-}
+
 .qa-c-item-avatar {
   display: inline-block;
   vertical-align: middle;
@@ -4341,9 +4339,8 @@ fieldset[disabled] .qa-a-selected {
 @media only screen and (min-width: 1200px) {
   .qa-c-item-buttons {
     display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+   float: right;
+   margin-top: 10px;
   }
 }
 .qa-c-item-buttons div:last-child.tooltip .tooltip-arrow {
