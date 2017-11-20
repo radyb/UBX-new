@@ -3030,16 +3030,16 @@ fieldset[disabled] .qa-form-light-button {
 }
 /*Google Translate button*/
 .goog-te-gadget-simple {
-  border:0px;
-  font-size: 14px;
-  font-weight: bold;
+  border:0px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
 }
 .goog-te-gadget img {
-  vertical-align: text-bottom;
+  vertical-align: text-bottom !important;
 }
 .goog-te-gadget span {border:0px !important;}
 .goog-te-gadget-simple .goog-te-menu-value span:last-child {
-  display: none;
+  display: none !important;
 }
 .goog-te-gadget-simple .goog-te-menu-value span:first-child:after {
   content: "\e901";
@@ -3048,15 +3048,15 @@ fieldset[disabled] .qa-form-light-button {
 }
 .goog-te-menu-frame {
   
-  border-radius: 0px;
-  box-shadow: 0 0 8px rgba(0,0,0,.15);
-  -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
-  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
-  border:solid 1px #BEBEBE;
+  border-radius: 0px !important;
+  box-shadow: 0 0 8px rgba(0,0,0,.15) !important;
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,.15) !important;
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15) !important;
+  border:solid 1px #BEBEBE !important;
 }
-.goog-te-menu2 {
-  border:0px !important;
-}
+.goog-te-menu2-item, .goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2-item-selected{color: #ff7675; text-decoration: none; padding: 7px 10px !important;}.goog-te-menu2 {border:0px !important;}.goog-te-menu2-item:hover div{color:#ffffff;background:#ff7675}.goog-te-menu2-item-selected div,.goog-te-menu2-item-selected:link div,.goog-te-menu2-item-selected:visited div,.goog-te-menu2-item-selected:hover div,.goog-te-menu2-item-selected:active div{color: #ffffff;background-color: #ff7675 !important;}
+
+
 /* Standard form (basic version - buttons only) */
 .qa-form-basic-button {
   display: inline-block;
@@ -3741,7 +3741,7 @@ a.qa-browse-cat-link:visited {
 }
 .qa-q-view-who-data,
 .qa-q-view-where-data {
-  color: #428bca;
+  color: #ff7675;
 }
 .qa-q-view-flags {
   display: inline-block;
