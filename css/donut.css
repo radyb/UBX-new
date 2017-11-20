@@ -1705,6 +1705,7 @@ a.qa-template-question .qa-view-count:focus {
  
   position: absolute;
   right: 0px;
+  margin-top:-5px;
  
 }
 .qa-favoriting .qa-waiting {
