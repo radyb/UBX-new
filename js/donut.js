@@ -52,4 +52,18 @@ jQuery(document).ready(function () {
     $('#nav').on('affix-top.bs.affix', function () {
      	$('#nav + .container').css('margin-top', 0);
  	});
+
+ 	function changeGoogleStyles() {
+ 		console.log('test');
+		if(($goog = $('.goog-te-menu-frame').contents().find('body')).length) {
+			var stylesHtml = '<style type="text/css">.goog-te-menu2-item, .goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2-item-selected{color: #ff7675; text-decoration: none;}.goog-te-menu2 {border:0px !important;}.goog-te-menu2-item:hover div{color:#ffffff;background:#ff7675}.goog-te-menu2-item-selected div,.goog-te-menu2-item-selected:link div,.goog-te-menu2-item-selected:visited div,.goog-te-menu2-item-selected:hover div,.goog-te-menu2-item-selected:active div{color: #ffffff;background-color: #ff7675 !important;}</style>';
+
+
+			$goog.prepend(stylesHtml);
+		} else {
+			setTimeout(changeGoogleStyles, 50);
+			}
+		}
+	changeGoogleStyles();
+
 });

@@ -3043,6 +3043,35 @@ fieldset[disabled] .qa-form-light-button {
 .qa-form-light-button-reopen:before {
   content: "\f09c";
 }
+/*Google Translate button*/
+.goog-te-gadget-simple {
+  border:0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.goog-te-gadget img {
+  vertical-align: text-bottom;
+}
+.goog-te-gadget span {border:0px !important;}
+.goog-te-gadget-simple .goog-te-menu-value span:last-child {
+  display: none;
+}
+.goog-te-gadget-simple .goog-te-menu-value span:first-child:after {
+  content: "\e901";
+  font-family: 'icomoon';
+  margin-left:15px;
+}
+.goog-te-menu-frame {
+  
+  border-radius: 0px;
+  box-shadow: 0 0 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15);
+  border:solid 1px #BEBEBE;
+}
+.goog-te-menu2 {
+  border:0px !important;
+}
 /* Standard form (basic version - buttons only) */
 .qa-form-basic-button {
   display: inline-block;
