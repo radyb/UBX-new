@@ -4819,11 +4819,22 @@ fieldset[disabled] .qa-a-selected {
 }
 .dropdown-split-right {border-bottom: 0px !important;}
 .navbar-nav:not(.navbar-right) li {
-  border-bottom: 1px solid #eee;
+   
 }
-.navbar-nav:not(.navbar-right) li a {
+.navbar-nav:not(.navbar-right) li ul li.active>a,
+.navbar-nav:not(.navbar-right) li ul li>a:hover {
+  color: #ffffff;
+  background-color: #ff7675;
+  border-color: #ff7675;
+}
+.navbar-nav:not(.navbar-right) li ul li.active>a:hover {
+  color: #ffffff;
+  background-color: #ffbaba;
+  border-color: #ffbaba;
+}
+.navbar-nav:not(.navbar-right) li ul li a {
   color: #ff7675;
-      
+  background: #ffffff    
 }
 
 #login-dropdown-menu, .navbar-nav.navbar-right li .dropdown-menu {
