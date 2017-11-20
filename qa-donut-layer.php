@@ -6,6 +6,15 @@ if (!defined('QA_VERSION')) { // don't allow this page to be requested directly 
 
 class qa_html_theme extends qa_html_theme_base {
 
+		function logo() 
+		{ 
+			// if we use a theme realtive image then adjust to the current theme
+			$logo = preg_replace('/qa-theme\/[^\/]+/', 
+								  'qa-theme/'.qa_get_site_theme(), 
+								  $this->content['logo']);
+			$this->output('<DIV CLASS="qa-logo">'.$logo.'</DIV>'); 
+		}
+	
 		function head()
 		{
 			$this->output(
