@@ -952,8 +952,10 @@ div .header-banner {
   background: #eeeeee;
   padding: 5px 10px;
 }
-.qa-q-view-follows-link {
-  color: #3B5998  !important;
+.qa-q-view-follows-link, 
+.qa-q-view-follows-link:hover {
+  text-decoration: underline;
+  color: #1a1a1a;
 }
 .qa-notice {
   margin-bottom: 0 ;
@@ -3611,19 +3613,14 @@ a.qa-browse-cat-link:visited {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  border-radius: 4px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #31708f;
-  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
-  background-image: -o-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
-  background-image: linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
-  border-color: #9acfea;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  background-color: #fff4b4;
+
+  border-color: #fff4b4;
+  color: #1a1a1a;
+  
 }
 .qa-q-view-follows h4 {
   margin-top: 0;
@@ -3645,10 +3642,7 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-follows .alert-link {
   color: #245269;
 }
-.qa-q-view-follows-link {
-  font-weight: bold;
-  color: #245269;
-}
+
 .qa-q-view-closed {
   padding: 15px;
   margin-bottom: 20px;
