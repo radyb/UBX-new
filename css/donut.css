@@ -360,14 +360,14 @@ radio {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #BEBEBE;
+  color: #9a9a9a;
   background-color: #ffffff !important;
   background-image: none;
   border: 2px solid #9a9a9a;
   border-radius:0px;
   -moz-border-radius:0px;
   -webkit-border-radius:0px;
- 
+  
 }
 input[type="text"]:focus,
 input[type="text"]:hover,
@@ -1700,12 +1700,10 @@ a.qa-template-question .qa-view-count:focus {
   margin-top: 10px;
 }
 .qa-favoriting {
-  float: right !important;
-  float: right;
+ 
   position: absolute;
   right: 0px;
-  padding-right: 50px;
-  padding-top: 2px;
+ 
 }
 .qa-favoriting .qa-waiting {
   float: right !important;
@@ -1715,10 +1713,7 @@ a.qa-template-question .qa-view-count:focus {
   right: 44px ;
   top: 35%;
 }
-.qa-template-question .qa-favoriting {
-  padding-right: 15px;
-  padding-top: 5px;
-}
+
 .qa-template-question .qa-favoriting .qa-waiting {
   float: right !important;
   float: right;
@@ -1769,8 +1764,9 @@ a.qa-template-question .qa-view-count:focus {
   color: #843534;
 }
 .qa-error a {
-  font-weight: bold;
-  color: #843534;
+  
+  color: #1a1a1a;
+  text-decoration: underline;
 }
 .qa-feed {
   padding: 15px;
@@ -2258,11 +2254,11 @@ a.list-group-item.active:hover {
 .qa-form-wide-table > tbody > tr > td.qa-form-wide-error {
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+  border: 0px;
   border-radius: 0px;  
   background-color: #ffbaba;
   border-color: #ffbaba;
-  color: #2A2A2A;
+  color: #1a1a1a;
   
   margin-top: 10px;
   display: block;
@@ -2392,6 +2388,7 @@ a.list-group-item.active:hover {
   border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
+  outline: none !important;
 }
 
 .qa-form-tall-button:active,
@@ -2405,8 +2402,7 @@ a.list-group-item.active:hover {
 .qa-form-basic-button.active {
   outline: 0;
   background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+ 
 }
 .qa-form-tall-button.disabled,
 .qa-form-tall-table input[type="button"].disabled,
@@ -2460,20 +2456,7 @@ fieldset[disabled] .qa-form-basic-button {
   border-color: #ffbaba;
   text-decoration: none;
 }
-.qa-form-tall-button:active,
-.qa-form-tall-table input[type="button"]:active,
-.qa-form-wide-button:active,
-.qa-form-basic-button:active,
-.qa-form-tall-button.active,
-.qa-form-tall-table input[type="button"].active,
-.qa-form-wide-button.active,
-.qa-form-basic-button.active,
-.open > .dropdown-toggle.qa-form-tall-button,
-.open > .dropdown-toggle.qa-form-tall-table input[type="button"],
-.open > .dropdown-toggle.qa-form-wide-button,
-.open > .dropdown-toggle.qa-form-basic-button {
-  background-image: none;
-}
+
 .qa-form-tall-button .badge,
 .qa-form-tall-table input[type="button"] .badge,
 .qa-form-wide-button .badge,
@@ -3826,24 +3809,11 @@ a.qa-browse-cat-link:visited {
 /* Answer form */
 .qa-part-a-form div#anew h2 {
   min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
-  background-image: -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
-  background-image: linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
-  border-color: #dcdcdc;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-bottom: 0px;
+ 
   padding: 9px;
-  border-radius: 3px;
-  font-size: 21px;
+  font-weight: bold;
+  font-size: 24px;
 }
 .qa-part-a-form div#anew h2 blockquote {
   border-color: #ddd;
@@ -3852,8 +3822,8 @@ a.qa-browse-cat-link:visited {
 /* Answer view  */
 .qa-part-a-list > h2#a_list_title {
   min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
+  
+  margin-bottom: 0px;
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
@@ -4223,22 +4193,13 @@ fieldset[disabled] .qa-a-selected {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid transparent;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #dddddd;
+  border-top:2px;
+  border-color: #
 }
 .qa-c-list-item + .qa-c-list-item {
   border-top: 0px ;
 }
-.qa-c-list-item:first-child {
-  border-top-right-radius: 3px ;
-  border-top-left-radius: 3px ;
-}
-.qa-c-list-item:last-child {
-  border-bottom-right-radius: 3px ;
-  border-bottom-left-radius: 3px ;
-}
+
 .qa-a-list-item-selected .qa-c-list-item {
   border: 1px solid #d6e9c6;
 }
@@ -4362,6 +4323,7 @@ fieldset[disabled] .qa-a-selected {
   border-color: #dddddd;
   padding: 15px;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 .qa-message-content {
   font-size: 18px;
