@@ -4167,26 +4167,25 @@ fieldset[disabled] .qa-a-selected {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  border-top:2px;
-  border-color: #
+  border-top:2px solid;
+  border-color: #87827C;
 }
 .qa-c-list-item + .qa-c-list-item {
   border-top: 0px ;
 }
 
 .qa-a-list-item-selected .qa-c-list-item {
-  border: 1px solid #d6e9c6;
+  border-top: 2px solid #87827C;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
-.qa-a-list-item-selected .qa-c-list-item + .qa-c-list-item {
-  border-top: 0px ;
-}
+
 .qa-a-list-item-selected .qa-c-list-item:first-child {
-  border-top-right-radius: 3px ;
-  border-top-left-radius: 3px ;
+  
 }
 .qa-a-list-item-selected .qa-c-list-item:last-child {
-  border-bottom-right-radius: 3px ;
-  border-bottom-left-radius: 3px ;
+  
 }
 
 .qa-c-item-link {
