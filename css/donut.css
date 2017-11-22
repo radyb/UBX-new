@@ -2811,12 +2811,10 @@ fieldset[disabled] .qa-form-light-button {
 .qa-form-light-button-reshow:before {
   content: "\f06e";
 }
-.qa-form-light-button-claim,
-.qa-form-light-button-claim:hover {
-  color: #a94442;
-}
+
 .qa-form-light-button-claim:before {
-  content: "\f08d";
+  content: "\e91b";
+  font-family: 'icomoon';
 }
 
 .qa-form-light-button-delete:before {
