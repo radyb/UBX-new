@@ -19,6 +19,20 @@ a, a:hover, a:active, a:focus, a.visited {
     text-decoration: none;
 }
 
+.search-container {
+  background: #F9585F;
+  padding: 40px 0;
+  margin-bottom: 10px;
+}
+.search-widget input[type="text"],
+.search-widget input[type="text"]:hover
+.search-widget input[type="text"]:focus {
+  border:0px !important;
+}
+.search-widget a,
+.search-widget a:active,
+.search-widget a:focus,
+.search-widget a:hover {color: #151315; font-size: 16px; text-decoration: underline;}
 
 .thumbnail > img,
 .thumbnail a > img,
@@ -107,6 +121,10 @@ a, a:hover, a:active, a:focus, a.visited {
 .qa-part-q-list:after,
 .qa-q-list-item:after {
   clear: both;
+}
+.navbar-default {
+  border:0px;
+
 }
 .navbar-inverse:after,
 .navbar-default:after,
@@ -270,7 +288,26 @@ footer.donut-footer .container {
 .qa-c-item-clear:after,
 .qa-footer-clear:after,
 .qa-page-links-clear:after {
-  clear: both;
+  clear: both; 
+}
+
+/*Ask Section styles*/
+.qa-ask-box input[type="text"],
+.qa-ask-box input[type="text"]:hover,
+.qa-ask-box input[type="text"]:active {
+  background-color: #F5F5F1 !important;
+  border-color: #F5F5F1 !important;
+  color: #87827C;
+}
+.alert-icon:before {
+  font-family: 'icomoon';
+  content: '\e900';
+  color: #ff7675;
+  font-size:16px;
+  margin-right: 10px;
+}
+.alert {
+  color: #ff7675;
 }
 /* styling for the input forms */
 
@@ -340,7 +377,7 @@ input[type="radio"]:checked:after {
     
     width: 4px;
     height: 4px;
-    display: inline-block;
+    display: block;
     border-radius:2px;
   -moz-border-radius:2px;
   -webkit-border-radius:2px;   
@@ -356,7 +393,7 @@ select,
 radio {
   display: block;
   width: 100%;
-  height: 45px;
+  height: 44px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -617,7 +654,7 @@ header .search-bar {
 }
 /* Navigation */
 .navbar {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   background: #ffffff;
 }
 
@@ -644,16 +681,21 @@ header .search-bar {
 }
 .qa-search-button {
   border: 0;
-  background: none;
+  background: #151315;
   padding: 2px 5px;
-  margin-top: 1px;
+  
   left: -28px;
   margin-bottom: 0;
-  border-radius: 3px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  border-radius: 0px;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
   outline: none ;
   margin-left: -10px !important;
+}
+.qa-search-button:hover {
+  color: #ff7675;
 }
 @media only screen and (max-width: 767px) {
   .navbar-nav.navbar-collapse {
@@ -764,17 +806,15 @@ header .search-bar {
   margin-bottom: 10px;
   color: #428bca;
 }
-.donut-masthead .container {
-  border-bottom: 1px solid #e2e2e2;
-}
-.donut-masthead h1 {
+
+.donut-masthead h1, h1 {
   font-size: 24px !important;
   font-weight: bold;
 }
 /* page title */
 .page-title {
   position: relative;
-  padding: 30px 0px ;
+  padding: 30px 15px ;
 }
 .page-title h1 {
   clear: none;
@@ -858,10 +898,7 @@ img {
 	padding:15px 10px 5px;
 	height:auto;
 } */
-div .header-banner {
-  float: right;
-  margin: 0;
-}
+
 .navbar-nav > li.dropdown-split-right > a {
   padding: 15px 10px 15px 10px;
 }
@@ -1239,7 +1276,7 @@ div .header-banner {
  
 }
 .qa-ask-box .qa-form-tall-label {
-  font-weight: bold;
+
 
   padding: 15px !important;
 }
@@ -2335,6 +2372,10 @@ a.list-group-item.active:hover {
 .qa-form-tall-buttons {
   padding: 8px 8px 8px 8px;
 }
+.ask-button {
+  float: right;
+  margin-top: -44px;
+}
 /* little bit work around the buttons */
 .qa-form-tall-button,
 .qa-favorite-button, 
@@ -2357,7 +2398,7 @@ a.list-group-item.active:hover {
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   white-space: nowrap;
   padding: 12px 30px !important;
   font-size: 1.4rem;
@@ -2590,11 +2631,7 @@ fieldset[disabled] .qa-form-basic-button {
   white-space: nowrap;
   padding: 10px;
 }
-.qa-form-wide-text {
-  /* background:@body-bg;
-		width:320px;
-		border:1px solid @input-border; */
-}
+
 .qa-form-wide-table textarea.qa-form-wide-text {
   height: 125px;
 }
@@ -2994,6 +3031,10 @@ fieldset[disabled] .qa-form-light-button {
 }
 .qa-form-light-button-reopen:before {
   content: "\f09c";
+}
+.google-translate-toolbar {
+  float: right;
+  margin-top: 10px;
 }
 /*Google Translate button*/
 .goog-te-gadget-simple {

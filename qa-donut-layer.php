@@ -111,11 +111,31 @@ class qa_html_theme extends qa_html_theme_base {
 				$this->output('</main>');
 			}
 
+			//TODO popular tags customizations
+			// $this->output('<div class="container search-container">');
+			// $this->output('<div class="search-bar">');
+			// $this->search();
+			// $this->output('</div>');
+			// $this->output('<a href="#" >Learn more about Support Communities</a>');
+			// $this->output('</div>');
+
+			//TODO searchbar
+			// $this->output('<div class="container radu">');
+			// $this->output_popular_tags();
+			// $this->output('</div>');
+			
+			$this->widgets('full', 'top');
+			
+			
 			$this->output('<div class="qa-body-wrapper">', '');
 
-			$this->widgets('full', 'top');
-			$this->header();
+			
+			
 			$this->widgets('full', 'high');
+
+			// $this->output('<div class="page-title">');
+			// 	$this->page_title_error();
+			// 	$this->output('</div>');
 
 			if (count($sub_navigation)) {
 				// create the left side bar
@@ -225,6 +245,8 @@ class qa_html_theme extends qa_html_theme_base {
 				$this->output($this->donut_nav_bar($this->content['navigation']));
 				unset($this->content['navigation']['main']);
 			}
+
+			$this->widgets('full', 'top_nav');
         }
 
 		function header_custom() // allows modification of custom element shown inside header after logo
@@ -815,9 +837,9 @@ class qa_html_theme extends qa_html_theme_base {
 			        </div>
 			      </div>
 			      <div class="col-sm-6">
-        			<div class="search-bar">
+        			<!-- <div class="search-bar">
 				        <?php $this->search(); ?>
-        			</div>
+        			</div> -->
 			      </div>
 			    </div>
 			  </div>
@@ -832,10 +854,12 @@ class qa_html_theme extends qa_html_theme_base {
 			            <span class="icon-bar"></span>
 			          </button>
 			        </div>
+
 			        <div class="donut-navigation">
 				        <ul class="nav navbar-nav navbar-right user-nav">
 				        	<?php $this->donut_user_drop_down(); ?>
 				        </ul>
+				        <div id="_GoogleTranslateElem" class="google-translate-toolbar"></div>
 				        <div class="navbar-collapse collapse main-nav">
 				        	<ul class="nav navbar-nav inner-drop-nav">
 				        	    <?php $this->donut_nav_bar_main_links($navigation['main']); ?>
@@ -1010,6 +1034,43 @@ class qa_html_theme extends qa_html_theme_base {
 			$this->output_raw('<meta charset="utf-8">');
 			$this->output_raw('<meta name="viewport" content="width=device-width, initial-scale=1">');
 		}
+
+		/**
+		*	Custom Popular Tags 
+		*/
+		public function output_popular_tags()
+	{
+		require_once QA_INCLUDE_DIR.'db/selects.php';
+
+		$populartags = qa_db_single_select(qa_db_popular_tags_selectspec(0, (int) qa_opt('tag_cloud_count_tags')));
+
+		$maxcount = reset($populartags);
+
+		$this->output(sprintf('<h2 style="margin-top: 0; padding-top: 0;">%s</h2>', qa_lang_html('main/popular_tags')));
+
+		$this->output('<div style="font-size: 10px;">');
+
+		$maxsize = qa_opt('tag_cloud_font_size');
+		$minsize = qa_opt('tag_cloud_minimal_font_size');
+		$scale = qa_opt('tag_cloud_size_popular');
+		$blockwordspreg = qa_get_block_words_preg();
+
+		foreach ($populartags as $tag => $count) {
+			$matches = qa_block_words_match_all($tag, $blockwordspreg);
+			if (empty($matches)) {
+				if ($scale) {
+					$size = number_format($maxsize * $count / $maxcount, 1);
+					if ($size < $minsize)
+						$size = $minsize;
+				} else
+					$size = $maxsize;
+
+				$this->output(sprintf('<a href="%s" style="font-size: %dpx; vertical-align: baseline;">%s</a>', qa_path_html('tag/' . $tag), $size, qa_html($tag)));
+			}
+		}
+
+		$this->output('</div>');
+	}
 
 		/**
 		 * prints the favicon icon
