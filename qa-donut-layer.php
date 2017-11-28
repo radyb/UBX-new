@@ -126,7 +126,7 @@ class qa_html_theme extends qa_html_theme_base {
 			
 			$this->widgets('full', 'top');
 			
-			
+
 			$this->output('<div class="qa-body-wrapper">', '');
 
 			
@@ -484,6 +484,7 @@ class qa_html_theme extends qa_html_theme_base {
 		{
 			$this->output('<div class="qa-q-item-stats">');
 			//Radu
+			$this->avatar($q_item, 'qa-q-item', null);
 			$this->voting($q_item);
 			// $this->a_count($q_item);
 			// qa_html_theme_base::view_count($q_item);
@@ -496,18 +497,24 @@ class qa_html_theme extends qa_html_theme_base {
 		*/
 		function q_item_main($q_item)
 		{
+			
 			$this->output('<div class="qa-q-item-main">');
+			
 
 			$this->view_count($q_item);
 			$this->q_item_title($q_item);
 			$this->q_item_content($q_item);
 			$this->post_tags($q_item, 'qa-q-item');
+			//Radu todo
 			$this->post_avatar_meta($q_item, 'qa-q-item');
 			
 			$this->q_item_buttons($q_item);
 
 			$this->output('</div>');
 		}
+
+
+
 
 		function post_avatar_meta($post, $class, $avatarprefix=null, $metaprefix=null, $metaseparator='<br/>')
 		{

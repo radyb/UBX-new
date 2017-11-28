@@ -1314,6 +1314,7 @@ img {
   width: 25px;
   height: 60px;
   margin-right: 5px;
+  margin-left:4px;
   padding: 0 0 0 3px;
   border-radius: 3px;
 }
@@ -3206,8 +3207,7 @@ fieldset[disabled] .qa-form-basic-button {
   width: 16.66666667%;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
 @media (min-width: 768px) {
   .qa-template-user-answers .qa-q-item-stats,
@@ -3295,8 +3295,7 @@ fieldset[disabled] .qa-form-basic-button {
   width: 11.5%;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
 @media (min-width: 768px) {
   .qa-q-item-stats {
