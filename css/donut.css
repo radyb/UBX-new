@@ -177,6 +177,7 @@ footer.donut-footer .container {
   font-size: 30px;
   padding: 21px 35px;
 }
+.qa-main-full {width: 100%;}
 /* body padding for the sticky navbar on the top */
 /* clearing the wrappers */
 #qa-login-group:after:before,
@@ -1168,6 +1169,7 @@ img {
     float: left;
     width: 75%;
   }
+  .qa-main-full {width: 100%;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .qa-main {
@@ -3344,6 +3346,9 @@ fieldset[disabled] .qa-form-basic-button {
 }
 .qa-q-item-avatar-meta {
   margin: 5px;
+}
+.qa-q-item-avatar-meta .qa-q-item-avatar {
+  display: none;
 }
 .qa-q-item-avatar {
   display: inline-block;

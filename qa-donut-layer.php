@@ -111,31 +111,14 @@ class qa_html_theme extends qa_html_theme_base {
 				$this->output('</main>');
 			}
 
-			//TODO popular tags customizations
-			// $this->output('<div class="container search-container">');
-			// $this->output('<div class="search-bar">');
-			// $this->search();
-			// $this->output('</div>');
-			// $this->output('<a href="#" >Learn more about Support Communities</a>');
-			// $this->output('</div>');
-
-			//TODO searchbar
-			// $this->output('<div class="container radu">');
-			// $this->output_popular_tags();
-			// $this->output('</div>');
 			
 			$this->widgets('full', 'top');
 			
 
 			$this->output('<div class="qa-body-wrapper">', '');
-
-			
 			
 			$this->widgets('full', 'high');
 
-			// $this->output('<div class="page-title">');
-			// 	$this->page_title_error();
-			// 	$this->output('</div>');
 
 			if (count($sub_navigation)) {
 				// create the left side bar
@@ -161,7 +144,13 @@ class qa_html_theme extends qa_html_theme_base {
 		{
 			$content=$this->content;
 
-			$this->output('<div class="qa-main pull-left'.(@$this->content['hidden'] ? ' qa-main-hidden' : '').'">');
+			if($this->template == 'question') {
+				$this->output('<div class="qa-main pull-left'.(@$this->content['hidden'] ? ' qa-main-hidden' : '').'">');
+			} else {
+				$this->output('<div class="qa-main qa-main-full pull-left'.(@$this->content['hidden'] ? ' qa-main-hidden' : '').'">');
+			}
+
+			// $this->output('<div class="qa-main pull-left'.(@$this->content['hidden'] ? ' qa-main-hidden' : '').'">');
 
 			if (!empty($this->content['navigation']['sub']) || $this->template == 'admin') {
 				$this->donut_sidebar_toggle_nav_btn();
@@ -483,7 +472,7 @@ class qa_html_theme extends qa_html_theme_base {
 		function q_item_stats($q_item)
 		{
 			$this->output('<div class="qa-q-item-stats">');
-			//Radu
+			//Radu add avatar
 			$this->avatar($q_item, 'qa-q-item', null);
 			$this->voting($q_item);
 			// $this->a_count($q_item);
@@ -499,7 +488,7 @@ class qa_html_theme extends qa_html_theme_base {
 		{
 			
 			$this->output('<div class="qa-q-item-main">');
-			
+				
 
 			$this->view_count($q_item);
 			$this->q_item_title($q_item);
@@ -935,6 +924,8 @@ class qa_html_theme extends qa_html_theme_base {
 		public function q_view_main($q_view)
 		{
 			$this->output('<div class="qa-q-view-main">');
+			
+			
 
 			if (isset($q_view['main_form_tags']))
 				$this->output('<form '.$q_view['main_form_tags'].'>'); // form for buttons on question
