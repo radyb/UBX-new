@@ -3284,6 +3284,9 @@ fieldset[disabled] .qa-form-basic-button {
   border-color: #dddddd;
   padding: 4px;
 }
+.qa-q-view>form {
+  float: left; width: 5%;
+}
 .qa-q-item-avatar-meta,
 .qa-q-view-avatar-meta,
 .qa-a-item-avatar-meta,
@@ -3291,6 +3294,7 @@ fieldset[disabled] .qa-form-basic-button {
   display: block;
   float: left;
 }
+.qa-q-view-avatar-meta .qa-q-view-meta .qa-q-view-who {padding-left: 0px !important;} 
 .qa-q-item-stats {
   float: left !important;
   float: left;
@@ -3727,6 +3731,7 @@ a.qa-browse-cat-link:visited {
   margin: 0;
   padding: 0;
 }
+.qa-q-view-tag-list:first-child a {padding-left: 0px;}
 .qa-q-view-tag-item {
   display: inline-block;
 }

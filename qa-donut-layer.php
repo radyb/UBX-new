@@ -385,6 +385,15 @@ class qa_html_theme extends qa_html_theme_base {
 
 			$this->output('<h1>');
 			$this->favorite();
+			
+			$q_view = @$this->content['q_view'];
+
+			// link title where appropriate
+			$url = isset($q_view['avatar']) ? $q_view['avatar'] : false;
+			$this->output($url);
+
+			
+
 			$this->title();
 			$this->output('</h1>');
 
