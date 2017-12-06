@@ -840,7 +840,6 @@ header .search-bar {
 .qa-main h1 {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
   margin: 20px 0 10px;
 }
 img {
@@ -2835,12 +2834,10 @@ fieldset[disabled] .qa-form-light-button {
 .qa-form-light-button-answer:before {
   content: "\e921";
 }
-.qa-form-light-button-reshow,
-.qa-form-light-button-reshow:hover {
-  color: #3c763d;
-}
+
 .qa-form-light-button-reshow:before {
-  content: "\f06e";
+  content: "\e913";
+   font-family: 'icomoon';
 }
 
 .qa-form-light-button-claim:before {
@@ -3843,10 +3840,7 @@ a.qa-browse-cat-link:visited {
 .qa-a-list-item + .qa-a-list-item {
   border-top: 0px ;
 }
-.qa-a-list-item:first-child {
-}
-.qa-a-list-item:last-child {
-}
+
 .qa-a-list-item-selected {
   border-left: solid 10px #B0DFB1 !important;
 }
@@ -3876,6 +3870,7 @@ a.qa-browse-cat-link:visited {
 .qa-a-list-item .qa-voting {
   margin-top: -10px;
 }
+.qa-a-list-item>form {float: left; width: 5%;}
 .qa-a-item-main {
   float: left;
   width: 95%;
