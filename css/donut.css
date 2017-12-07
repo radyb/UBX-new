@@ -3919,7 +3919,7 @@ a.qa-browse-cat-link:visited {
 }
 .qa-a-unselect-button .fa-check, .qa-a-select-button .fa-check {display: none;}
 .qa-a-unselect-button:before, .qa-a-select-button:before {content: "\e915";}
-.qa-a-unselect-button:after, .qa-a-select-button:after {content: " Flag";}
+.qa-a-unselect-button:after, .qa-a-select-button:after {content: " Best Answer";}
 
 .qa-a-unselect-button:before { content: "\e915";}
 
