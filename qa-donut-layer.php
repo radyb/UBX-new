@@ -120,10 +120,10 @@ class qa_html_theme extends qa_html_theme_base {
 			$this->widgets('full', 'high');
 
 
-			// if (count($sub_navigation)) {
-			// 	// create the left side bar
-			// 	$this->left_side_bar($sub_navigation);
-			// }
+			if (count($sub_navigation)) {
+				// create the left side bar
+				$this->left_side_bar($sub_navigation);
+			}
 
 			$this->main();
 
@@ -152,9 +152,9 @@ class qa_html_theme extends qa_html_theme_base {
 
 			// $this->output('<div class="qa-main pull-left'.(@$this->content['hidden'] ? ' qa-main-hidden' : '').'">');
 
-			if (!empty($this->content['navigation']['sub']) || $this->template == 'admin') {
-				$this->donut_sidebar_toggle_nav_btn();
-			}
+			//if (!empty($this->content['navigation']['sub']) || $this->template == 'admin') {
+			//	$this->donut_sidebar_toggle_nav_btn();
+			//}
 
 			$this->widgets('main', 'top');
 
@@ -273,7 +273,7 @@ class qa_html_theme extends qa_html_theme_base {
 		function left_side_bar($sub_navigation)
 		{
 
-			$this->output('<div class="qa-left-side-bar" id="sidebar" role="navigation">', '');
+			$this->output('<div class="qa-left-side-bar hidden-xs" id="sidebar" role="navigation">', '');
 			if (count($sub_navigation)) {
 
 				$this->output('<div class="list-group">', '');
