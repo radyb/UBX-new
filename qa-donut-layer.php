@@ -120,10 +120,10 @@ class qa_html_theme extends qa_html_theme_base {
 			$this->widgets('full', 'high');
 
 
-			if (count($sub_navigation)) {
-				// create the left side bar
-				$this->left_side_bar($sub_navigation);
-			}
+			// if (count($sub_navigation)) {
+			// 	// create the left side bar
+			// 	$this->left_side_bar($sub_navigation);
+			// }
 
 			$this->main();
 
