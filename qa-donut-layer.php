@@ -858,16 +858,23 @@ class qa_html_theme extends qa_html_theme_base {
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			          </button>
+			          <span class="nav-title">
+			          	Forum Navigation
+			          </span>
+			          
 			        </div>
 
 			        <div class="donut-navigation">
 				        <ul class="nav navbar-nav navbar-right user-nav">
 				        	<?php $this->donut_user_drop_down(); ?>
 				        </ul>
-				        <div id="_GoogleTranslateElem" class="google-translate-toolbar"></div>
+				        
 				        <div class="navbar-collapse collapse main-nav">
 				        	<ul class="nav navbar-nav inner-drop-nav">
 				        	    <?php $this->donut_nav_bar_main_links($navigation['main']); ?>
+				        	    <li class="pull-right">
+				        	    	<div id="_GoogleTranslateElem" class="google-translate-toolbar"></div>
+				        	    </li>
 				        	</ul>
 				        </div>
 
@@ -988,7 +995,7 @@ class qa_html_theme extends qa_html_theme_base {
 
 			$icon   = (!!@$nav_item['icon']) ? donut_get_fa_icon(@$nav_item['icon']) : '' ;
 
-			$this->output('<li '.$class.'><a href="'.$nav_item['url'].'">'.$icon . $nav_item['label'].'</a></li>');
+			$this->output('<li '.$class.'><a href="'.$nav_item['url'].'">'.$icon . $nav_item['label'].'</a>');
 		}
 
 		/**
@@ -1004,14 +1011,14 @@ class qa_html_theme extends qa_html_theme_base {
 			if (!empty($sub_nav_items) && count($sub_nav_items)) {
 				$nav_item['class'] = "dropdown-split-left" ;
 				$this->donut_nav_bar_item($nav_item);
-				$this->output('<li class="dropdown dropdown-split-right hidden-xs '.$class.'">');
+				// $this->output('<li class="dropdown dropdown-split-right hidden-xs '.$class.'">');
 				$this->output('<a href="#" class="dropdown-toggle transparent" data-toggle="dropdown"><span class="icon-arrow-down"></span></a>');
 				$this->output('<ul class="dropdown-menu" role="menu">');
 				foreach ($sub_nav_items as $key => $sub_nav_item) {
 					$this->donut_nav_bar_item($sub_nav_item);
 				}
 				$this->output('</ul>');
-				$this->output('</li>');
+				// $this->output('</li>');
 			}else {
 				$this->donut_nav_bar_item($nav_item);
 			}

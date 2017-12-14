@@ -5,6 +5,7 @@
     line-height: 2rem;
     color: #2a2a2a;
     font-weight: bold;
+    float: left;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -13,3 +14,4 @@
     background-color: inherit;
 }
 .inner-drop-nav li>a .icon-arrow-down {margin-top:5px;}
+

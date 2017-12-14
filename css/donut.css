@@ -719,6 +719,12 @@ header .search-bar {
   .main-nav {
     clear: both ;
   }
+  .navbar-nav .open .dropdown-menu {
+    margin-top:35px !important;
+  }
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {background-color: #000000;}
+  .dropdown-split-left.open {background-color: #000000;}
+  .dropdown-split-left.open .dropdown-menu li a{background-color: #000000; color: #ffffff}
   .main-nav li.active > a,
   .main-nav li > a:hover {
     color: #555;
@@ -726,6 +732,7 @@ header .search-bar {
   }
   .main-nav li {
     border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
   }
   .main-nav li:last-child {
     border-bottom: none ;
@@ -1183,10 +1190,37 @@ img {
     margin-bottom: 80px;
   }
 }
+@media (min-width: 768px) {
+  .navbar-nav {
+      float: none;
+      margin: 0;
+  }
+}
 @media only screen and (max-width: 767px) {
   .qa-main {
     margin-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
   }
+  .donut-navigation {
+    background-color: #000000;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #FEFEFF !important;
+  }
+
+  .navbar-default .navbar-toggle.collapsed, .navbar-default .navbar-toggle.collapsed:hover, .navbar-default .navbar-toggle.collapsed:focus {background: #ffffff !important;}
+  .navbar-default .navbar-toggle.collapsed {border-color: #ffffff;}
+  .navbar-default .navbar-toggle.collapsed .icon-bar {background-color: #000000;}
+  
+  .navbar-default .navbar-toggle {background: #000000 !important;}
+  .navbar-default .navbar-toggle {border-color: #000000;}
+  .navbar-default .navbar-toggle .icon-bar {background-color: #ffffff;}
+
+    .goog-te-gadget-simple {background: #000000 !important;}
+  .goog-te-gadget-simple .goog-te-menu-value {color: #ffffff !important}
 }
 .qa-main-hidden h1 {
   color: #000000;
@@ -3133,6 +3167,10 @@ fieldset[disabled] .qa-form-basic-button {
   }
   .qa-q-list .qa-q-item-main {
     padding-left: 0;
+    width: 84%
+  }
+  .qa-q-item-stats {
+    width: 15% !important;
   }
 }
 .qa-q-list-item {
@@ -3305,9 +3343,7 @@ fieldset[disabled] .qa-form-basic-button {
     width: 80%;
   }
 }
-.qa-q-item-avatar-meta {
-  margin: 5px;
-}
+
 .qa-q-item-avatar-meta .qa-q-item-avatar {
   display: none;
 }
