@@ -202,7 +202,7 @@
 }
 @media (max-width: 767px) {
   .qa-template-admin .qa-left-side-bar {
-    display: block !important;
+    display: none !important;
   }
   table.qa-template-admin .qa-left-side-bar {
     display: table;
