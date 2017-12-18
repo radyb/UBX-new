@@ -725,6 +725,8 @@ header .search-bar {
   .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {background-color: #000000;}
   .dropdown-split-left.open {background-color: #000000;}
   .dropdown-split-left.open .dropdown-menu li a{background-color: #000000; color: #ffffff}
+  .dropdown-split-left.open .dropdown-menu li a:hover{color: #555;
+    background-color: #e7e7e7;}
   .main-nav li.active > a,
   .main-nav li > a:hover {
     color: #555;
@@ -3406,7 +3408,7 @@ a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #1
 .qa-q-item-view-count {
 
   color: #151315;
-  line-height: inherit !important;
+  line-height: 42px !important;
 }
 .qa-q-view-main .qa-q-item-view-count {
     float: left;
@@ -3594,8 +3596,7 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-content .entry-content a:hover,
 .qa-q-view-content .entry-content a:active,
 .qa-q-view-content .entry-content a:visited {color: #ff7675; text-decoration: none;}
-.qa-q-view-avatar {
-  display: none;
+.qa-q-view-avatar { 
   vertical-align: middle;
   margin-right: 5px;
 }
