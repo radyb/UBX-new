@@ -3328,7 +3328,7 @@ fieldset[disabled] .qa-form-basic-button {
 @media (min-width: 1200px) {
   .qa-q-item-stats {
     float: left;
-    width: 6%;
+    width: 5%;
   }
 }
 .qa-q-item-main {
@@ -3393,7 +3393,7 @@ a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #1
   margin: 0;
   padding: 0;
 }
-.qa-q-item-tag-list:first-child a {padding-left:5px;}
+.qa-q-item-tag-list:first-child a {padding-left:0px;}
 .qa-q-item-tag-item {
   display: inline;
   margin-top: 2px;
@@ -3891,7 +3891,6 @@ a.qa-browse-cat-link:visited {
 }
 
 .qa-a-item-avatar {
-  display: none;
   vertical-align: middle;
   margin-right: 5px;
 }
