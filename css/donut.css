@@ -293,7 +293,8 @@ footer.donut-footer .container {
   clear: both; 
 }
 
-/*Ask Section styles*/
+/*Ask Section styles*/ 
+.qa-ask-box {max-width: 550px;}
 .qa-ask-box input[type="text"],
 .qa-ask-box input[type="text"]:hover,
 .qa-ask-box input[type="text"]:active {
@@ -693,8 +694,6 @@ header .search-bar {
   border: 0;
   background: #151315;
   padding: 2px 5px;
-  
-  left: -28px;
   margin-bottom: 0;
   border-radius: 0px;
   line-height: 44px;
@@ -734,7 +733,7 @@ header .search-bar {
     background-color: #e7e7e7;
   }
   .main-nav li {
-    border-bottom: 1px solid #e2e2e2;
+    
     overflow: hidden;
   }
   .main-nav li:last-child {
@@ -1212,7 +1211,10 @@ img {
   }
   .nav-title {
     display: inline-block;
-    line-height: 50px;
+    line-height: 56px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
   }
 
   .navbar-default .navbar-nav>li>a {
@@ -1227,12 +1229,15 @@ img {
   .navbar-default .navbar-toggle {border-color: #000000;}
   .navbar-default .navbar-toggle .icon-bar {background-color: #ffffff;}
 
-    .goog-te-gadget-simple {background: #000000 !important;}
+  .goog-te-gadget-simple {background: #000000 !important;}
   .goog-te-gadget-simple .goog-te-menu-value {color: #ffffff !important}
+  .goog-te-menu-value img {display: none;}
 }
 .qa-main-hidden h1 {
   color: #000000;
 }
+.search-widget {max-width: 550px;}
+.search-widget-form {margin-bottom: 10px;}
 /* Page sections */
 .qa-sidepanel {
   position: relative;
@@ -2174,13 +2179,13 @@ a.list-group-item.active > .qa-nav-cat-item .qa-nav-cat-note,
 .qa-page-links-list > li:first-child > a,
 .qa-page-links-list > li:first-child > span {
   margin-left: 0;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 .qa-page-links-list > li:last-child > a,
 .qa-page-links-list > li:last-child > span {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .qa-page-links-list > .active > a,
 .qa-page-links-list > .active > span,
@@ -3027,7 +3032,8 @@ fieldset[disabled] .qa-form-light-button {
 .goog-te-gadget-simple .goog-te-menu-value span:first-child:after {
   content: "\e901";
   font-family: 'icomoon';
-  margin-left:15px;
+  margin-left:10px;
+  font-weight: 400;
 }
 .goog-te-menu-frame {
   
@@ -3037,6 +3043,7 @@ fieldset[disabled] .qa-form-light-button {
   -webkit-box-shadow: 0 0 8px rgba(0,0,0,.15) !important;
   border:solid 1px #BEBEBE !important;
 }
+.goog-te-menu2-item {border:0px;}
 .goog-te-menu2-item, .goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2-item-selected{color: #ff7675; text-decoration: none; padding: 7px 10px !important;}.goog-te-menu2 {border:0px !important;}.goog-te-menu2-item:hover div{color:#ffffff;background:#ff7675}.goog-te-menu2-item-selected div,.goog-te-menu2-item-selected:link div,.goog-te-menu2-item-selected:visited div,.goog-te-menu2-item-selected:hover div,.goog-te-menu2-item-selected:active div{color: #ffffff;background-color: #ff7675 !important;}
 
 
