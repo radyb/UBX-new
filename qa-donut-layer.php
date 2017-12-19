@@ -101,7 +101,7 @@ class qa_html_theme extends qa_html_theme_base {
 			$this->body_prefix();
 			$this->notices();
 
-			if ($this->template !== 'question') {
+/*			if ($this->template !== 'question') {
 				$this->output('<main class="donut-masthead">');
 				$this->output('<div class="container">');
 				$this->output('<div class="page-title">');
@@ -109,7 +109,7 @@ class qa_html_theme extends qa_html_theme_base {
 				$this->output('</div>');
 				$this->output('</div>');
 				$this->output('</main>');
-			}
+			}*/
 
 			
 			$this->widgets('full', 'top');
@@ -158,9 +158,9 @@ class qa_html_theme extends qa_html_theme_base {
 
 			$this->widgets('main', 'top');
 
-			if($this->template == 'question') {
+//			if($this->template == 'question') {
 				$this->page_title_error();
-			}
+//			}
 
 			if (!empty($this->content['navigation']['sub']) || $this->template == 'admin') {
 
