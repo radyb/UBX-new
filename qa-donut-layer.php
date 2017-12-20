@@ -127,7 +127,7 @@ class qa_html_theme extends qa_html_theme_base {
 
 			$this->main();
 
-			if ($this->template !== 'admin' && $this->template!='user') {
+			if ($this->template == 'question') {
 				$this->sidepanel();
 			}
 
