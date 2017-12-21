@@ -1,8 +1,8 @@
 /*header Menu*/
 .navbar-default .navbar-nav>li {margin-right: 15px;}
 .navbar-default .navbar-nav>li>a {
-	font-size: 1.4rem;
-    line-height: 2rem;
+	font-size: 14px;
+    line-height: 20px;
     color: #2a2a2a;
     font-weight: bold;
     float: left;
