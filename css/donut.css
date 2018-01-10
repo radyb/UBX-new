@@ -2445,6 +2445,7 @@ a.list-group-item.active:hover {
   margin-top: -44px;
 }
 /* little bit work around the buttons */
+
 .qa-form-tall-button,
 .qa-favorite-button, 
 .qa-unfavorite-button,
@@ -2483,7 +2484,9 @@ a.list-group-item.active:hover {
   -webkit-border-radius: 0px;
   outline: none !important;
 }
-
+.qa-favorite-button, .qa-unfavorite-button {
+  padding: 12px 12px !important;
+}
 .qa-form-tall-button:active,
 .qa-form-tall-table input[type="button"]:active,
 .qa-form-wide-button:active,
