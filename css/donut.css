@@ -1768,8 +1768,8 @@ fieldset[disabled] .qa-voted-down-button {
 }
 .qa-template-question .qa-view-count {
 
-  padding: .2em .6em .3em;
-  font-size: 14px;
+  padding: 0 0 0 10px;
+  
   line-height: 1;
   color: #151315;
   text-align: center;
@@ -3629,6 +3629,7 @@ a.qa-browse-cat-link:visited {
   vertical-align: middle;
   font-size: 16px;
 }
+.qa-q-view-when-pad { display:inline-block; padding-right: 10px; padding-left: 10px; line-height: 16px; border-right: solid 1px #151315 !important;}
 .qa-q-view-follows {
   padding: 15px;
   margin-bottom: 20px;
@@ -4196,15 +4197,25 @@ fieldset[disabled] .qa-a-unselect-button {
   background-color: #ffffff;
 }
 .qa-related-qs h2 {
+  padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: -15px !important;
+    margin-top: -10px !important;
+    background: #000000;
+    color: #ffffff;
+    margin-left: -15px !important;
+
   font-size: 18px;
-  padding-bottom: 9px;
+
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 10px !important ;
+  padding-bottom: 10px;
+  padding-top: 10px !important;
 }
 .qa-related-q-list {
   list-style-type: none;
-  padding: 0 20px 15px;
+  padding: 0 0px 15px;
   margin: 0;
 }
 .qa-related-q-item {
