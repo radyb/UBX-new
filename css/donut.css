@@ -3147,10 +3147,7 @@ fieldset[disabled] .qa-form-basic-button {
   background-image: none;
 }
 /* Question list */
-.qa-part-q-list {
-  margin-left: -15px;
-  margin-right: -15px;
-}
+
 .qa-q-list {
   position: relative;
   float: left;
