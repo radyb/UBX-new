@@ -836,7 +836,7 @@ header .search-bar {
   color: #428bca;
 }
 
-.donut-masthead h1, h1 {
+.donut-masthead h1, h1, h2 {
   font-size: 24px !important;
   font-weight: bold;
 }
