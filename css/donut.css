@@ -2733,13 +2733,12 @@ fieldset[disabled] .qa-form-basic-button {
   background: none;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   border:0px;
   color: #ff7675;
   
   padding: 5px 10px;
-  font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
   text-transform: capitalize;
@@ -3738,6 +3737,7 @@ a.qa-browse-cat-link:visited {
 }
 .qa-q-view-buttons {
   float: right;
+  margin-top: 1px;
 }
 @media only screen and (max-width: 767px) {
   .qa-q-view-buttons {
@@ -3972,8 +3972,8 @@ a.qa-browse-cat-link:visited {
   border: 0px;
   color: #ff7675;
   white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
+  padding: 9px 12px;
+  font-size: 16px;
   line-height: 1.42857143;
 
 }
