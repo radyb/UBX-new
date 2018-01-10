@@ -836,7 +836,7 @@ header .search-bar {
   color: #428bca;
 }
 
-.donut-masthead h1, h1 {
+.donut-masthead h1, h1, h2 {
   font-size: 24px !important;
   font-weight: bold;
 }
@@ -3025,7 +3025,7 @@ fieldset[disabled] .qa-form-light-button {
 }
 .google-translate-toolbar {
   float: right;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 /*Google Translate button*/
 .goog-te-gadget-simple {
