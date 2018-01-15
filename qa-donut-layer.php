@@ -388,9 +388,9 @@ class qa_html_theme extends qa_html_theme_base {
 			
 			$q_view = @$this->content['q_view'];
 
-			// link title where appropriate
-			$url = isset($q_view['avatar']) ? $q_view['avatar'] : false;
-			$this->output($url);
+			// Avatar in the title of the question
+			// $url = isset($q_view['avatar']) ? $q_view['avatar'] : false;
+			// $this->output($url);
 
 			
 

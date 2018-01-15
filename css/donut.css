@@ -1804,9 +1804,7 @@ a.qa-template-question .qa-view-count:focus {
 }
 .qa-favoriting {
  
-  position: absolute;
-  right: 0px;
-  margin-top:-5px;
+  margin-right: 10px;
  
 }
 .qa-favoriting .qa-waiting {
@@ -2482,6 +2480,8 @@ a.list-group-item.active:hover {
 }
 .qa-favorite-button, .qa-unfavorite-button {
   padding: 12px 12px !important;
+  width: 38px;
+  height: 38px;
 }
 .qa-form-tall-button:active,
 .qa-form-tall-table input[type="button"]:active,
@@ -3275,16 +3275,11 @@ fieldset[disabled] .qa-form-basic-button {
   }
 }
 .qa-q-item-title {
-  color: #000000;
-  font-size: 30px;
+  color: #2a2a2a;
+  font-size: 24px;
   font-weight: bold ;
 }
-.qa-q-item-title a {
-  
-  
-  /*line-height: 1.42857143;*/
-  color: #151315;
-}
+
 .qa-q-item-title .qa-q-item-content {
   font-size: 14px;
   margin-top: 8px;
