@@ -3054,7 +3054,7 @@ fieldset[disabled] .qa-form-light-button {
 }
 .goog-te-menu2-item {border:0px;}
 .goog-te-menu2-item, .goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2-item-selected{color: #ff7675; text-decoration: none; padding: 7px 10px !important;}.goog-te-menu2 {border:0px !important;}.goog-te-menu2-item:hover div{color:#ffffff;background:#ff7675}.goog-te-menu2-item-selected div,.goog-te-menu2-item-selected:link div,.goog-te-menu2-item-selected:visited div,.goog-te-menu2-item-selected:hover div,.goog-te-menu2-item-selected:active div{color: #ffffff;background-color: #ff7675 !important;}
-
+.navbar-user-img {padding: 0px !important;}
 
 /* Standard form (basic version - buttons only) */
 .qa-form-basic-button {
