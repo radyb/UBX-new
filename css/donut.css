@@ -3210,12 +3210,7 @@ fieldset[disabled] .qa-form-basic-button {
 /*.qa-q-list-item + .qa-q-list-item {
   border-top: 0px ;
 }*/
-.qa-q-list-item:first-child {
-  border-top:0px;
-}
-.qa-q-list-item:last-child {
-  
-}
+
 @media only screen and (max-width: 767px) {
   .qa-q-list-item {
     margin-left: -8px;
