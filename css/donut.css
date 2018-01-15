@@ -1352,7 +1352,7 @@ img {
 }
 .entry-title {
   color: #000000;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
 }
 .qa-rss-feed {
@@ -1794,7 +1794,7 @@ a.qa-template-question .qa-view-count:focus {
   display: inline;
 }
 .qa-template-question .qa-view-count-pad {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.42857143;
   letter-spacing: 1px;
 }
@@ -2728,7 +2728,7 @@ fieldset[disabled] .qa-form-basic-button {
   background: none;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.42857143;
   border:0px;
   color: #ff7675;
@@ -3275,7 +3275,7 @@ fieldset[disabled] .qa-form-basic-button {
 }
 .qa-q-item-title {
   color: #000000;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold ;
 }
 .qa-q-item-title a {
@@ -3588,12 +3588,12 @@ a.qa-browse-cat-link:visited {
 }
 .qa-q-view-content {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
   word-wrap: break-word;
 }
 
 .qa-q-view-content .entry-content {
-  font-size: 16px;
+  font-size: 18px;
 }
 .qa-q-view-content .entry-content a,
 .qa-q-view-content .entry-content a:hover,
@@ -3606,7 +3606,7 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-meta {
   display: inline-block;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 14px;
 }
 .qa-q-view-when-pad { display:inline-block; padding-right: 10px; padding-left: 10px; line-height: 16px; border-right: solid 1px #151315 !important;}
 .qa-q-view-follows {
@@ -3877,7 +3877,7 @@ a.qa-browse-cat-link:visited {
   padding-left: 10px;
 }
 .qa-a-item-content {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 16px;
   word-wrap: break-word;
 }
@@ -3953,7 +3953,7 @@ a.qa-browse-cat-link:visited {
   color: #ff7675;
   white-space: nowrap;
   padding: 9px 12px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.42857143;
 
 }
@@ -4068,7 +4068,7 @@ fieldset[disabled] .qa-a-unselect-button {
 .qa-c-item-content {
   display: block;
   margin-bottom: 6px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .qa-c-item-avatar {
@@ -4124,12 +4124,7 @@ fieldset[disabled] .qa-a-unselect-button {
 .qa-c-item-buttons div:last-child.tooltip .tooltip-arrow {
   top: 0 !important ;
 }
-.qa-c-item-buttons .qa-form-light-button {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
+
 /* Message list */
 .qa-message-item {
   background-color: #ffffff;
@@ -4235,7 +4230,7 @@ fieldset[disabled] .qa-a-unselect-button {
 /* Classes passed to theme */
 .qa-user-link,
 .qa-category-link {
-  font-size: 16px;
+  font-size: 14px;
   color: #ff7675;
 }
 .qa-user-link:hover, .qa-category-link:hover {
