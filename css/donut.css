@@ -1188,8 +1188,6 @@ img {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media (min-width: 992px) {
   .qa-main {
@@ -3211,10 +3209,9 @@ fieldset[disabled] .qa-form-basic-button {
   border-top: 0px ;
 }*/
 .qa-q-list-item:first-child {
-  border-top:0px;
 }
 .qa-q-list-item:last-child {
-  
+  border-bottom: 1px solid;
 }
 @media only screen and (max-width: 767px) {
   .qa-q-list-item {
