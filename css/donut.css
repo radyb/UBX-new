@@ -3369,11 +3369,12 @@ fieldset[disabled] .qa-form-basic-button {
 }
 .qa-q-view-who-pad, .qa-a-item-who-pad {display: none;}
 .qa-q-item-meta>span:first-child {padding-left: 0px;}
-.qa-q-item-meta>span, .qa-q-view-meta>span, .qa-a-item-meta>span {border-right: solid 1px #151315; padding-right:10px; padding-left:10px;}
+.qa-q-item-meta>span, .qa-q-view-meta>span, .qa-a-item-meta>span, .qa-c-item-who-data, .qa-c-item-what, .qa-c-item-when {border-right: solid 1px #151315; padding-right:10px; padding-left:10px;}
 .qa-q-item-meta>span:last-child, .qa-q-view-meta>span:last-child, .qa-a-item-meta>span:last-child {border-right: 0px;}
 a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #151315; padding-right:10px; padding-left:10px;}
 .qa-q-item-count {color: #ff7675;}
 .qa-q-item-count-data:before {    font-family: 'icomoon' !important; line-height:17px; content: '\e920'; margin-right:7px;vertical-align:middle;}
+.qa-a-item-when {border-right:0px !important;}
 .qa-q-item-tags {
   margin: 10px 0;
   overflow: hidden;
