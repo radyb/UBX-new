@@ -1237,6 +1237,7 @@ img {
 
   .goog-te-gadget-simple {background: #000000 !important;}
   .goog-te-gadget-simple .goog-te-menu-value {color: #ffffff !important}
+
   .goog-te-menu-value img {display: none;}
 }
 .qa-main-hidden h1 {
@@ -3033,7 +3034,7 @@ fieldset[disabled] .qa-form-light-button {
 .goog-te-gadget img {
   vertical-align: text-bottom !important;
 }
-.goog-te-gadget span {border:0px !important;}
+.goog-te-gadget span {border:0px !important; color: #2a2a2a !important;}
 .goog-te-gadget-simple .goog-te-menu-value span:last-child {
   display: none !important;
 }
