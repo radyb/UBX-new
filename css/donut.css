@@ -1808,20 +1808,13 @@ a.qa-template-question .qa-view-count:focus {
  
 }
 .qa-favoriting .qa-waiting {
-  float: right !important;
-  float: right;
-  font-size: 20px;
-  position: absolute;
-  right: 44px ;
-  top: 35%;
+  
 }
 
 .qa-template-question .qa-favoriting .qa-waiting {
-  float: right !important;
-  float: right;
-  font-size: 20px;
+  
   position: absolute;
-  right: 24%;
+  left: 3px;
   top: 30%;
 }
 
@@ -2483,6 +2476,7 @@ a.list-group-item.active:hover {
   width: 38px;
   height: 38px;
 }
+.qa-unfavorite-button {background-color: #419641;}
 .qa-form-tall-button:active,
 .qa-form-tall-table input[type="button"]:active,
 .qa-form-wide-button:active,
@@ -3279,7 +3273,12 @@ fieldset[disabled] .qa-form-basic-button {
   font-size: 24px;
   font-weight: bold ;
 }
-
+.qa-q-item-title a {
+  
+  
+  /*line-height: 1.42857143;*/
+  color: #2a2a2a;
+}
 .qa-q-item-title .qa-q-item-content {
   font-size: 14px;
   margin-top: 8px;
@@ -4400,13 +4399,13 @@ fieldset[disabled] .qa-a-unselect-button {
 .qa-browse-cat-favorited:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: 14px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\f005";
+  content: "\f004";
   padding-right: 5px;
-  color: #f0ad4e;
+  color: #ff7675;
 }
 .qa-q-favorited .qa-q-item-title a:before.pull-left,
 .qa-cat-favorited:before.pull-left,
