@@ -3469,6 +3469,7 @@ a.qa-q-item-what, a.qa-q-view-what, a.qa-a-item-what {border-right: solid 1px #1
 .user-box-inner .user-avatar .qa-avatar-image {
   border-radius: 50%;
 }
+.user-avatar span {padding:  0px !important;}
 .user-box-inner .user-data,
 .user-box-inner .score {
   margin-top: 5px;
