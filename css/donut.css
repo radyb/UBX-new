@@ -2476,7 +2476,8 @@ a.list-group-item.active:hover {
   width: 38px;
   height: 38px;
 }
-.qa-unfavorite-button {background-color: #419641;}
+.qa-unfavorite-button {background-color: #ffffff;
+    color: #ff7675;}
 .qa-form-tall-button:active,
 .qa-form-tall-table input[type="button"]:active,
 .qa-form-wide-button:active,
