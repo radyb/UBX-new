@@ -3718,10 +3718,11 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-buttons {
   float: right;
   margin-top: 1px;
+  text-align: right;
 }
 @media only screen and (max-width: 767px) {
   .qa-q-view-buttons {
-    width: 350px;
+    min-width: 50%;
   }
 }
 .qa-q-view-c-list {
