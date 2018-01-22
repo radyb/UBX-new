@@ -732,8 +732,9 @@ header .search-bar {
   .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {background-color: #000000;}
   .dropdown-split-left.open {background-color: #000000;}
   .dropdown-split-left.open .dropdown-menu li a{background-color: #000000; color: #ffffff !important; padding: 15px 10px;}
-  .dropdown-split-left.open .dropdown-menu li a:hover{color: #555;
-    background-color: #e7e7e7;}
+  .dropdown-split-left.open .dropdown-menu li a:hover, .dropdown-split-left.open .dropdown-menu li.active a{color: #ff7675 !important; background-color: #000000 !important;}
+  /*.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus*/
+
   .main-nav li.active > a,
   .main-nav li > a:hover {
     color: #555;
@@ -2241,7 +2242,7 @@ a.list-group-item.active:hover {
 .qa-form-tall-table > tbody + tbody,
 .qa-form-wide-table > tbody + tbody {
   border-top: 0;
-}
+}.navbar-default .navbar-nav .open .dropdown-menu>li>a
 .qa-form-tall-table > thead > tr > th,
 .qa-form-wide-table > thead > tr > th,
 .qa-form-tall-table > tbody > tr > th,
