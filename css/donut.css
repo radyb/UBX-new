@@ -1377,7 +1377,7 @@ img {
   width: 25px;
   height: 60px;
   margin-right: 5px;
-  margin-left:4px;
+  
   padding: 0 0 0 3px;
   border-radius: 3px;
 }
@@ -1804,7 +1804,7 @@ a.qa-template-question .qa-view-count:focus {
 }
 .qa-favoriting {
  
-  margin-right: 10px;
+  float: left;
  
 }
 .qa-favoriting .qa-waiting {
