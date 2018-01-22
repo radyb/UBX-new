@@ -1600,7 +1600,7 @@ fieldset[disabled] .qa-vote-down-disabled {
 .qa-vote-one-button {
   position: absolute;
   left: 2px;
-  top: 20px;
+  top: 0px;
 }
 .qa-vote-first-button {
   position: absolute;
