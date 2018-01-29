@@ -4231,7 +4231,7 @@ fieldset[disabled] .qa-a-unselect-button {
   color: #428bca;
 }
 /* Classes passed to theme */
-.qa-user-link {font-weight: bold;}
+.qa-user-link {font-weight: normal;}
 .qa-user-link,
 .qa-category-link {
   font-size: 14px;
