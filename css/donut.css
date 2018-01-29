@@ -3307,7 +3307,6 @@ fieldset[disabled] .qa-form-basic-button {
 .qa-q-view-avatar-meta .qa-q-view-meta .qa-q-view-who {padding-left: 0px !important;} 
 .qa-q-item-stats {
   float: left !important;
-  float: left;
   width: 40px;
   position: relative;
   min-height: 1px;
@@ -3607,8 +3606,9 @@ a.qa-browse-cat-link:visited {
 .qa-q-view-meta {
   display: inline-block;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 14px !important;
 }
+.qa-q-view-meta .qa-user-link {font-size: 14px;}
 .qa-q-view-when-pad { display:inline-block; padding-right: 10px; padding-left: 10px; line-height: 16px; border-right: solid 1px #151315 !important;}
 .qa-q-view-follows {
   padding: 15px;
@@ -4231,10 +4231,9 @@ fieldset[disabled] .qa-a-unselect-button {
   color: #428bca;
 }
 /* Classes passed to theme */
-.qa-user-link {font-weight: normal;}
+.qa-user-link {font-weight: normal; font-size: 16px;}
 .qa-user-link,
 .qa-category-link {
-  font-size: 14px;
   color: #ff6e59;
 }
 .qa-user-link:hover, .qa-category-link:hover {
