@@ -3366,7 +3366,7 @@ fieldset[disabled] .qa-form-basic-button {
   font-weight: bold;
   padding-left: 4px;
 }
-.qa-q-view-who-pad, .qa-a-item-who-pad {display: none !important;}
+.qa-q-view-who-pad, .qa-a-item-who-pad, .qc-c-item-who-pad {display: none !important;}
 .qa-q-item-meta>span:first-child {padding-left: 0px;}
 .qa-q-item-meta>span, .qa-q-view-meta>span, .qa-a-item-meta>span, .qa-c-item-who-data, .qa-c-item-what, .qa-c-item-when {border-right: solid 1px #151315; padding-right:10px; padding-left:10px;}
 .qa-q-item-meta>span:last-child, .qa-q-view-meta>span:last-child, .qa-a-item-meta>span:last-child {border-right: 0px;}
