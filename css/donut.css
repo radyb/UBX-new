@@ -1,8 +1,30 @@
-@font-face {
+/*@font-face {
     font-family: 'ublox';
     src: url(../fonts/ublox_Rg.ttf);
     font-weight: normal;
-}
+}*/
+
+@font-face {
+  font-family: 'ublox';
+  src: url("../fonts/u-blox_W_Rg.eot");
+  src: url("../fonts/u-blox_W_Rg.eot?#iefix") format("embedded-opentype"), url("../fonts/u-blox_W_Rg.woff2") format("woff2"), url("../fonts/u-blox_W_Rg.woff") format("woff"), url("../fonts/u-blox_A_Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ublox';
+  src: url("../fonts/u-blox_W_Lt.eot");
+  src: url("../fonts/u-blox_W_Lt.eot?#iefix") format("embedded-opentype"), url("../fonts/u-blox_W_Lt.woff2") format("woff2"), url("../fonts/u-blox_W_Lt.woff") format("woff"), url("../fonts/u-blox_A_Lt.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ublox';
+  src: url("../fonts/u-blox_W_Bd.eot");
+  src: url("../fonts/u-blox_W_Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/u-blox_W_Bd.woff2") format("woff2"), url("../fonts/u-blox_W_Bd.woff") format("woff"), url("../fonts/u-blox_A_Bd.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+  
 
 html {
     font-family: 'ublox' !important; 
