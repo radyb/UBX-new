@@ -1058,8 +1058,8 @@ img {
 .qa-nav-sub {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 @media (min-width: 992px) {
   .qa-nav-sub {
@@ -2407,7 +2407,7 @@ a.list-group-item.active:hover {
 }
 .qa-form-tall-label,
 .qa-form-tall-data {
-  padding: 8px ;
+  padding: 8px 0px;
 }
 .qa-form-tall-label select {
   margin-bottom: 5px;
