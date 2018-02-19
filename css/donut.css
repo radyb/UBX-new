@@ -2405,6 +2405,7 @@ a.list-group-item.active:hover {
 .qa-form-wide-table > tbody > tr > td.qa-form-wide-error .alert-link {
   color: #843534;
 }
+.qa-part-form-q-edit + .qa-q-view .qa-q-view-main .qa-q-item-view-count {display: none;}
 .qa-form-tall-label,
 .qa-form-tall-data {
   padding: 8px 0px;
