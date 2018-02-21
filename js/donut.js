@@ -46,11 +46,14 @@ jQuery(document).ready(function () {
 
     $('#nav').on('affix.bs.affix', function () {
         var navHeight = $('.navbar').outerHeight(true);
-        $('#nav + .container').css('margin-top', navHeight);
+        // $('#nav + .container').css('margin-top', navHeight);
+        $('#nav + .qa-widgets-full').css('margin-top', navHeight);
+        
 	});
 
     $('#nav').on('affix-top.bs.affix', function () {
-     	$('#nav + .container').css('margin-top', 0);
+     	// $('#nav + .container').css('margin-top', 0);
+     	$('#nav + .qa-widgets-full').css('margin-top', 0);
  	});
 
  	function changeGoogleStyles() { 		
